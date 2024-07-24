@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+*{
+    webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.solar_system{
+    transform-style: preserve-3d;
+    pointer-events: none;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    }
+    body.solar_system .planet , body input[type=radio][name=planet]::after,body .overlay{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: auto;
+    }
+    body.solar_system.planet.neptune.trajectory.ner , body .solar_system .planet.neptune .trajectory.pro , body .solar_system .planet.neptune .trajectory.tri, body.solar_system .planet.uranus .trajectory.umb, body.solar_system .planet.uranus .trajectory.ari , body.solar_system .planet.uranus .trajectory.mir, body .solar_system .planet.saturn .trajectory.enc , body .solar_system .planet.saturn .trajectory.di , body.solar_system .planet.saturn .trajectory.ti, body.solar_system .planet.jupiter .trajectory.ga , body.solar_system .planet.jupiter .trajectory.eu , body.solar_system.planet.jupiter .trajectory.lop,body.solar_system .planet.mars .trajectory.p body.solar_system.planet.mars , .trajectory.d , body.solar_system .planet.earth .trajectory.m{
+        border: 2px dashed white;
+        position: absolute;
+        border-radius: 3400px;
+        background: none !important;
+        z-index: -2;
+    }
+body .solar_system .planet{
+    height: 1200px;
+    width: 1200px;
+    border-radius: 60px;
+    background: red;
+    transition: transfrom 2.8s 0.23s cubic-bezier(0.33,0,0,1), opacity 2s 0.8s , box-shadow 0s 0s;
+    background-size: 1140px 910px !important;       
+    top: auto;
+    bottom: -920px;
+}
+body .solar_system .planet .moon{
+    height: 200px;
+    width: 200px;
+    border-radius: 600px;
+    background-color: red;
+    position: absolute;
+    text-align: center;
+    color: white;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.6s 0.2s;
+}
+body .solar_system .planet .moon h2{
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin: 0;
+    position: relative;
+    top: -120px;
+}
+body .solar_system .planet .moon h3{
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #fea082;
+    margin: 0;
+    position: relative;
+    top: -120px;
+}
+@keyframes planet {
+    from{
+        background-position-y: 0px;
+    }
+    to{
+        background-position-y: -1000px;
+        }
+    }
+body .solar {
+    position: absolute;
+    transform: rotatex(-20deg);
+    perspective: 800px;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+body input[type=radio] [name=planet]::after{
+    width: 220px;
+    height: 220px;
+    border-radius: 550px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 12;
+    left: 18px;
+    bottom: 282px;
+}
