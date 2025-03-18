@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Tutorial - Learn Git from Basic to Advanced</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="tutorial-menu">
+                <h3>Git Tutorial</h3>
+                <ul>
+                    <li><a href="#getting-started" class="section-link">Getting Started</a></li>
+                    <li><a href="#git-basics" class="section-link">Git Basics</a></li>
+                    <li><a href="#branching" class="section-link">Git Branching</a></li>
+                    <li><a href="#flags" class="section-link">Git Flags</a></li>
+                    <li><a href="#advanced" class="section-link">Advanced Topics</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="content-header">
+                <h1>Git Tutorial</h1>
+                <div class="actions">
+                    <button class="action-btn"><i class="fas fa-print"></i> Print</button>
+                    <button class="action-btn"><i class="fas fa-download"></i> PDF</button>
+                </div>
+            </div>
+
+            <!-- Content Sections -->
+            <div id="content-container">
+                <!-- Getting Started Section -->
+                <section id="getting-started" class="content-section">
+                    <h2>Getting Started with Git</h2>
+                    <p>Git is a distributed version control system that helps track changes in source code during software development.</p>
+                    
+                    <div class="info-box">
+                        <h3>Prerequisites:</h3>
+                        <ul>
+                            <li>Basic command line knowledge</li>
+                            <li>Text editor installed</li>
+                            <li>Git installed on your system</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h3>Check Git Version:</h3>
+                        <pre><code>$ git --version</code></pre>
+                    </div>
+                </section>
+
+                <!-- Git Basics Section -->
+                <section id="git-basics" class="content-section">
+                    <h2>Git Basics</h2>
+                    <p>Learn the fundamental commands to start working with Git.</p>
+                    
+                    <div class="info-box">
+                        <h3>Essential Commands:</h3>
+                        <ul>
+                            <li><code>git init</code> - Initialize a repository</li>
+                            <li><code>git add</code> - Stage changes</li>
+                            <li><code>git commit</code> - Save changes</li>
+                            <li><code>git push</code> - Upload to remote</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h3>Basic Workflow:</h3>
+                        <pre><code>$ git init
+$ git add .
+$ git commit -m "Initial commit"
+$ git push origin main</code></pre>
+                    </div>
+                </section>
+
+                <!-- Git Branching Section -->
+                <section id="branching" class="content-section">
+                    <h2>Git Branching</h2>
+                    <p>Branches allow you to develop features isolated from each other.</p>
+                    
+                    <div class="info-box">
+                        <h3>Branch Commands:</h3>
+                        <ul>
+                            <li><code>git branch</code> - List branches</li>
+                            <li><code>git checkout -b</code> - Create new branch</li>
+                            <li><code>git merge</code> - Merge branches</li>
+                            <li><code>git branch -d</code> - Delete branch</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h3>Branching Example:</h3>
+                        <pre><code>$ git checkout -b feature
+$ git add .
+$ git commit -m "Add new feature"
+$ git checkout main
+$ git merge feature</code></pre>
+                    </div>
+                </section>
+
+                <!-- Git Flags Section -->
+                <section id="flags" class="content-section">
+                    <h2>Git Flags and Options</h2>
+                    <p>Git commands can be modified with various flags to change their behavior. Here are the most commonly used flags for different Git commands.</p>
+
+                    <div class="command-group">
+                        <h3>git add flags</h3>
+                        <div class="info-box">
+                            <ul>
+                                <li><code>-A, --all</code> - Stage all changes</li>
+                                <li><code>-p, --patch</code> - Interactively choose hunks to stage</li>
+                                <li><code>-n, --dry-run</code> - Show what would be added</li>
+                                <li><code>-f, --force</code> - Allow adding ignored files</li>
+                                <li><code>-u, --update</code> - Update tracked files</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="command-group">
+                        <h3>git commit flags</h3>
+                        <div class="info-box">
+                            <ul>
+                                <li><code>-m "message"</code> - Add commit message</li>
+                                <li><code>-a</code> - Stage modified and deleted files automatically</li>
+                                <li><code>--amend</code> - Modify the last commit</li>
+                                <li><code>-v</code> - Show diff in commit message editor</li>
+                                <li><code>--no-verify</code> - Skip pre-commit hooks</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="command-group">
+                        <h3>git push flags</h3>
+                        <div class="info-box">
+                            <ul>
+                                <li><code>-u, --set-upstream</code> - Set upstream for git pull/status</li>
+                                <li><code>-f, --force</code> - Force push changes</li>
+                                <li><code>--tags</code> - Push all tags</li>
+                                <li><code>--dry-run</code> - Show what would be pushed</li>
+                                <li><code>--all</code> - Push all branches</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="command-group">
+                        <h3>git pull flags</h3>
+                        <div class="info-box">
+                            <ul>
+                                <li><code>--rebase</code> - Rebase instead of merge</li>
+                                <li><code>--no-commit</code> - Don't commit after merge</li>
+                                <li><code>--squash</code> - Squash all commits into one</li>
+                                <li><code>-v, --verbose</code> - Be more verbose</li>
+                                <li><code>--allow-unrelated-histories</code> - Merge unrelated branches</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="command-group">
+                        <h3>git branch flags</h3>
+                        <div class="info-box">
+                            <ul>
+                                <li><code>-d, --delete</code> - Delete a branch</li>
+                                <li><code>-D</code> - Force delete branch</li>
+                                <li><code>-m, --move</code> - Rename a branch</li>
+                                <li><code>-a, --all</code> - List all branches</li>
+                                <li><code>-r, --remotes</code> - List remote branches</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="example-box">
+                        <h3>Common Usage Examples:</h3>
+                        <pre><code># Stage all changes and commit with message
+$ git add -A
+$ git commit -m "Update features"
+
+# Force push to remote
+$ git push -f origin main
+
+# Create and switch to new branch
+$ git checkout -b feature-branch
+
+# Delete branch locally and remotely
+$ git branch -d feature-branch
+$ git push origin --delete feature-branch</code></pre>
+                    </div>
+                </section>
+
+                <!-- Advanced Topics Section -->
+                <section id="advanced" class="content-section">
+                    <h2>Advanced Git Topics</h2>
+                    <p>Explore advanced Git features and techniques.</p>
+                    
+                    <div class="info-box">
+                        <h3>Advanced Features:</h3>
+                        <ul>
+                            <li>Rebasing</li>
+                            <li>Cherry-picking</li>
+                            <li>Interactive rebase</li>
+                            <li>Reflog</li>
+                        </ul>
+                    </div>
+
+                    <div class="example-box">
+                        <h3>Advanced Commands:</h3>
+                        <pre><code>$ git rebase main
+$ git cherry-pick commit-hash
+$ git rebase -i HEAD~3
+$ git reflog</code></pre>
+                    </div>
+                </section>
+            </div>
+
+            <div class="navigation">
+                <a href="#" class="prev"><i class="fas fa-arrow-left"></i> Previous</a>
+                <a href="#" class="next">Next <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
