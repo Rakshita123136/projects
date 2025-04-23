@@ -1,0 +1,29 @@
+
+.First{
+    text-decoration: overline;
+    color: rgba(127, 102, 182,1);
+    align-items: center;
+    border: 2px solid blue;
+    border-style: groove;
+    border-radius: 5px;
+    border-width: 5px 2px 4px;
+    border-color: beige;
+    text-align: center;
+   
+}
+.two{
+    color: rgb(250, 142, 154);
+   display: inline;
+   
+    
+}
+.para{
+    color: chocolate;
+    text-align: justify;
+
+}
+span{
+    color: blue;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 2</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="C:\Users\JYOTIKA\Desktop\MERN\favicon.ico">
+
+    <!-- Styles -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Company Contact Table -->
+    <h2>Company Contact Table</h2>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Country</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>J.P</td>
+            <td>Germany</td>
+            <td>324577</td>
+        </tr>
+    </table>
+
+    <!-- Vertical Table (Names) -->
+    <h2>Vertical Table (Names)</h2>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td>Jyotika</td>
+            <td>Rakshita</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td>Uppar</td>
+            <td>Uppar</td>
+        </tr>
+    </table>
+
+    <!-- Full Contact Table -->
+    <h2>Full Contact Table</h2>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>Jyotika</td>
+            <td>Uppar</td>
+            <td>784657</td>
+        </tr>
+    </table>
+
+    <!-- Colspan Example -->
+    <h2>Colspan Example</h2>
+    <table>
+        <tr>
+            <th colspan="3">Employee Info</th> <!-- Spans across 3 columns -->
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Department</td>
+            <td>Location</td>
+        </tr>
+        <tr>
+            <td>Amit</td>
+            <td>IT</td>
+            <td>Mumbai</td>
+        </tr>
+    </table>
+
+    <!-- Rowspan Example -->
+    <h2>Rowspan Example</h2>
+    <table>
+        <tr>
+            <th rowspan="2">Course</th> <!-- Spans across 2 rows -->
+            <th>Semester</th>
+            <th>Subject</th>
+        </tr>
+        <tr>
+            <td>IV</td>
+            <td>Web Programming</td>
+        </tr>
+    </table>
+    <!--There are two types os list 
+    ol : Order list
+    ul: Unorder list
+    dl: Descrption list-->
+<ol>
+    <li>Coffes</li>
+    <li>Tea</li>
+    <li>Latte</li>
+    <li>cappicino</li>
+</ol>
+<hr>
+<ul>
+    <li>Rice</li>
+    <li>Dal</li>
+    <li>chapati</li>
+</ul>
+<hr>
+<dl>
+    <dt>Coffe</dt>
+    <dd>Black Hot drink</dd>
+    <dt>Milk</dt>
+    <dd>White cold drink</dd>
+</dl>
+<hr>
+<!--Order types: A,a,I,i-->
+<ol type ="a">
+<li>Coffe</li>
+</ol>
+<ol type="1" start="30">
+    <li>Tea</li>
+</ol>
+<hr>
+<!-- Block level element -->
+<div>This is a block-level element</div>
+<p>This is a paragraph (block-level too)</p>
+<span>This is inline</span><a>So is this</a>
+
+ <!-- --Many more--> 
+  <hr>
+  <!--inline level element-->
+  <p>This is <span style="color: red;">red text</span> inside a paragraph.</p>
+
+<a href="#">This is a link</a> and <strong>this is bold</strong> on the same line.
+
+<img src="logo.png" alt="Logo" width="50"> fits inline with text.<hr>
+<br>
+<!--IFRAME-->
+<h2>Working Iframe Example (Wikipedia)</h2>
+<iframe 
+    src="https://en.wikipedia.org/wiki/HTML" 
+    width="100%" 
+    height="500" 
+    title="Wikipedia HTML Page">
+</iframe><hr>
+<br>
+<!--CODE TAG: to write codee inside our webpage-->
+<p>Use <code>console.log("Hello")</code> to print in JavaScript.</p><br>
+<hr><br>
+<!--KBD TAg-->
+<p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your file.</p><br>
+<!--Samp tag-->
+<samp>File not found</samp><br>
+<!-- pre : use to show as written in code on screen  -->
+<!-- var tag -->
+<var>Sum</var>
+<!-- semantic tag -->
+ <section>
+    <h1>Hello this is new section </h1>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Mollitia laudantium quaerat similique?</p>
+ </section>
+ <section>
+    <h1>This is section 2</h1>
+    <p>Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit.
+         Blanditiis deserunt delectus eaque!</p>
+ </section><br><hr>
+ <!--Artical-->
+ <article><h2>Chrome</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, id.</p>
+</article>
+<article>
+    <h2>
+        Google
+    </h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nostrum dicta dolores quae ab!</p>
+</article><hr>
+<header>
+    <h1>hello header</h1>
+</header>
+<footer>
+    Made with love 
+    contact : 9556544
+</footer>
+<nav>
+    <a href="#">Contact</a>
+    <a href="#">Home</a>
+</nav>
+<!-- aside tage side mein use hota hai -->
+ <aside>
+    hello html Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+     Officia tenetur aliquid dicta.
+ </aside>
+
+ <!-- symbol in html -->
+  <p>I will display &euro;</p><hr><br>
+  <!-- video tag -->
+   <video width="320" height="240"controls> 
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" 
+        type="video/mp4">your browser does not support the video tag
+   </video><hr>
+   <br>
+   <!-- audio tag -->
+<audio controls>
+    <source src="https://www.w3schools.com/html/horse.ogg">your browser doesnt support
+</audio><hr>
+<br>
+<!-- youtube video -->
+<iframe width="400" height="300"
+src="https://www.youtube.com/embed/wa1O3nqW5hQ?autoplay=1&mute=1"
+title="video"
+allow="autoplay"
+frameborder="0"
+allowfullscreen>
+</iframe><hr>
+<br>
+<!-- forms tag -->
+ <form>
+    <p>These are some type of input</p>
+    <input type="text"><br>
+    <input type = "radio"><br>
+    <input type ="checkbox"><br>
+    <input type="submit"><br>
+    <input type="password"><br>
+    <input type="reset" value="reset"><br>
+    <input type="color"><br>
+    <input type="Date"><br>
+    <input type="datetime-local"><br>
+    <input type="email"><br>
+    <input type="image" src="#" title="image"><br>
+    <input type="file"><br>
+    <input type="hidden">
+
+ </form><hr>
+ <form>
+   <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname"><br>
+    
+    <br>
+    <p>Choose any one language</p>
+    <input type="radio" id="jave" name="one">
+    <label for="java">Java</label><br>
+    <input type="radio" id="python" name="one">
+    <label for="python">python</label><br>
+    <br>
+    <button type="button">Click here</button>
+    <br>
+    <br>
+    <textarea name="message"> there the cat are playing and can put multiple input</textarea>
+    <p>fav food</p>
+    <input type="checkbox" id="p1" name="icecream" value="icecream">
+    <label for="p1" >Ice cream</label><br>
+    <input type="checkbox" id="p2" name="pavbhaji" value="pavbhaji">
+    <label for="p2">pav bhaji</label><br><br>
+    <label for="vehicle">Select a car</label><br>
+    <select id="vehicle" size="3" multiple>
+        <option>Car</option>
+        <option>bike</option>
+        <option>bicycle</option>
+        <option>bus</option>
+    </select>
+    <br>
+    <br>
+   <input type="Submit" value ="submit">
+ </form><hr><br>
+ <!-- fieldset example -->
+  <from>
+    <fieldset>
+        <legend>Person:</legend>
+        <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname">
+    </fieldset>
+
+
+  </from>
+</body>
+</html>

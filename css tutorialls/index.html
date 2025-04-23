@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexbox Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      width: 190px;
+      padding: 20px;
+      border: 5px solid black;
+      margin: 30px;
+      text-align: center;
+     
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* ✅ Flexbox container */
+    @media (max-width : 420px) and (min-width : 566px){
+        .container{
+            flex-direction: column;
+            
+        }
+        
+    }
+    .container {
+      display: flex;
+      justify-content: space-around; /* Spacing between items */
+      align-items: center;           /* Vertical alignment */
+      margin: 50px;
+      padding: 50px;
+      background-color: #f2f2f2;
+      height: 190px;
+      border: 2px dashed gray;
+      flex-wrap: wrap-reverse;
+    }
+
+    /* ✅ Flex items (boxes inside the container) */
+    .box1, .box3 {
+      width: 100px;
+      height: 100px;
+      background-color: #4caf50;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .box3 {
+      background-color: #2196f3;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is Jyotika's first CSS practice</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, sequi?</p>
+  <span>Hello</span>
+  <h2>This is Selector</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium corrupti hic?</p>
+
+  <div class="box">
+    <h1>Hello And Welcome</h1>
+  </div>
+  <br><br><br><br><br>
+<hr>
+  <!-- ✅ Flexbox Section -->
+  <h2>Flexbox Example</h2>
+  <div class="container" id="flex">
+    <div class="box1">1</div>
+    <div class="box3">2</div>
+    <div class="box3">3</div>
+  </div>
+</body>
+</html>
