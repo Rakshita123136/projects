@@ -229,3 +229,106 @@ console.log(user[id]); // 1234
 const globalSymbol = Symbol.for("shared");
 console.log(Symbol.for("shared") === globalSymbol); // true
 
+//recursion:a function calling itself 
+function printNumberRecursive(n) {
+    if(n<=10){
+        console.log(n);
+        printNumberRecursive(n+1)
+    }
+}
+printNumberRecursive(1)
+//factorial
+function fact(n){
+    if(n ==0){
+        return 1;
+    // }else{
+    //     return n * fact(n-1)
+    // }
+}
+}
+console.log(5*fact(5-1)*fact(4-1)*fact(3-1)*fact(2-1));
+//asyncronous:Asynchronous code allows operations like fetching data from APIs or reading files without blocking the execution of other tasks.
+
+// - Functions passed as arguments and executed later.
+
+function fetchData(callback) {
+    setTimeout(() => {
+      callback("Data received!");
+    }, 1000);
+  }
+  
+  fetchData(data => console.log(data)); // "Data received!" after 1s
+//Promises
+const fetchData = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Data received!");
+    }, 1000);
+  });
+  
+  fetchData.then(data => console.log(data));
+  //callback
+function fun(val){
+    function add(a,b,callback){
+        let sum = a +b;
+        callback(sum);
+    }
+  }
+  add(5,10,fun)
+  function loadingData(callback) {
+    setTimeout(() => {
+        console.log("1) Loading Data...");
+        callback();
+    }, 1000);
+}
+
+function callingData(callback) {
+    setTimeout(() => {
+        console.log("2) Calling Data...");
+        callback();
+    }, 1000);
+}
+
+function approvingData(callback) {
+    setTimeout(() => {
+        console.log("3) Approving Data...");
+        callback();
+    }, 1000);
+}
+
+function approved(callback) {
+    setTimeout(() => {
+        console.log("4) Approved!");
+        callback();
+    }, 1000);
+}
+
+// Callback Hell (deep nesting)
+loadingData(() => {
+    callingData(() => {
+        approvingData(() => {
+            approved(() => {
+                console.log("5) Process Complete!");
+            });
+        });
+    });
+});
+//promise
+let homeworkPromise = new Promise((resolve, reject) => {
+    let isDone = true;
+  
+    if (isDone) {
+      resolve("Homework is done! 🎉");
+    } else {
+      reject("I didn't do it 😞");
+    }
+  });
+  
+  homeworkPromise
+    .then((message) => {
+      console.log("SUCCESS:", message);
+    })
+    .catch((error) => {
+      console.log("FAILURE:", error);
+    });
+  //async await
+  
