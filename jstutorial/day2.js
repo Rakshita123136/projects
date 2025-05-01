@@ -331,4 +331,50 @@ let homeworkPromise = new Promise((resolve, reject) => {
       console.log("FAILURE:", error);
     });
   //async await
+//async makes a function return a Promise.
+
+// await pauses the function until the Promise is resolved or rejected.
+
+// You can only use await inside an async function.
+
+
+  async function checkHomework() {
+    try {
+      let result = await doHomework();
+      console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
+  }
   
+  checkHomework();
+  //set interval
+  setInterval(fun,2000)
+  function fun(){
+    let date = new Date().toLaocaleTimeString();
+    console.log(date);
+  } 
+setTimeout (()=>{
+    //clearInterval
+clearInterval(inter);
+},10000)
+
+//call , bind and apply
+//calls a function with a specific this value and arguments passed one by one
+function greet(greeting, name) {
+    console.log(greeting + ", " + name);
+  }
+  
+  greet.call(null, "Hello", "Rakshita"); // Hello, Rakshita
+//bind:returns a new function with this bound to specific object you call it later
+const person = { name: "Rakshita" };
+
+function sayName() {
+  console.log("My name is " + this.name);
+}
+
+const boundFunc = sayName.bind(person);
+
+boundFunc(); // My name is Rakshita
+//apply :just like call() ,but arguments are passed as an array
+greet.apply(null, ["Hi", "Rakshita"]); // Hi, Rakshita
