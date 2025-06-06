@@ -29,20 +29,22 @@
         <div id="inside"></div>
        </div>
        <p> <button onclick="myMove()">Click</button></p>
-    <script > 
-        function myMove(){
-            if(pos == 350){
+   <script>
+    function myMove(){
+        let pos = 0; // Declare here at the start
+        const elem = document.getElementById("inside");
+        const id = setInterval(frame, 10); // Declare id here
+
+        function frame() {
+            if (pos == 350) {  // Now this works correctly
                 clearInterval(id);
-            }
-            let pos = 0;
-            const elem = document.getElementById("inside");
-            const id = setInterval(frame,10);
-            function frame(){
-                pos++;
-                elem.style.top = pos+ 'px'
-                elem.style.left = pos++ + 'px';
+            } else {
+                pos++; 
+                elem.style.top = pos + 'px';
+                elem.style.left = pos + 'px';
             }
         }
-    </script>
+    }
+</script> 
 </body>
 </html>
