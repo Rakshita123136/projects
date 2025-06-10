@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDiv{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)"></div>
+    <br>
+    <button onclick="changeColor()">Change color</button>
+    <script>
+        function changeColor(){
+            var div = document.getElementById("myDiv");
+            div.style.background ="red"
+        }
+        function onMouseOver(div){
+            div.style.backgroundColor = "blue"
+        }
+        
+         function onMouseOut(div){
+            div.style.backgroundColor = "pink"
+        }
+        
+    </script>
+</body>
+</html>
