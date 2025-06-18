@@ -88,3 +88,12 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     });
   })
   .catch(error => console.error('Fetch error:', error));
+
+
+  //pop ups
+
+  alert("Hello")
+  prompt("hello how are u?" ,"fine")
+  confirm("are u 18 +")
+
+
