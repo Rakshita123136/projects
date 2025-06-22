@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessible Email Input</title>
+</head>
+<body>
+  <form>
+    <label for="emailInput">Your Email please:</label>
+    <input 
+      type="email" 
+      id="emailInput" 
+      placeholder="you@example.com" 
+      title="Enter your email address"
+      onfocus="onfun()" 
+      onblur="offfun()" 
+      onselect="selectfun()" 
+    />
+  </form>
+
+  <script>
+    let input = document.getElementById("emailInput");
+
+    function onfun() {
+      input.style.backgroundColor = "red";
+    }
+
+    function offfun() {
+      input.style.backgroundColor = "yellow";
+    }
+
+    function selectfun() {
+      alert("You selected some text!");
+    }
+  </script>
+</body>
+</html> 
