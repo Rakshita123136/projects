@@ -62,3 +62,23 @@ let isleapyear = (year)=>{
     }
 } 
 console.log(isleapyear(2029))
+
+//sum of all elements
+console.log("sum of all element")
+let arr = [20,30,40,10,46]
+let sums = 0;
+for(let i = 0 ; i < arr.length; i++){
+    sums +=arr[i]
+}
+console.log(sums)
+
+//create a object representing car
+let car = {
+    make : "toyota",
+    model: "camry",
+    year: "2022"
+}
+car.startEngine = function(){
+    console.log("engin started")
+}
+car.startEngine();
